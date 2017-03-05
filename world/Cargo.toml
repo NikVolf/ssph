@@ -1,11 +1,8 @@
 [package]
-name = "ssph"
+name = "world"
 version = "0.1.0"
 authors = ["NikVolf <nikvolf@gmail.com>"]
 
 [dependencies]
-world = { path = "world" }
 
-[[bin]]
-path = "run/main.rs"
-name = "ssph"
+[lib]

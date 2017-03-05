@@ -10,15 +10,15 @@ impl Loc3 {
         Loc3 { pos: position, vel: Vec3::zero() }
     }
 
-    pub fn with_vecocity(position: Vec3, velocity: Vec3) -> Self {
+    pub fn with_velocity(position: Vec3, velocity: Vec3) -> Self {
         Loc3 { pos: position, vel: velocity }
     }
 
-    pub fn position(&self) -> &Vec3 {
+    pub fn pos(&self) -> &Vec3 {
         &self.pos
     }
 
-    pub fn velocity(&self) -> &Vec3 {
+    pub fn vel(&self) -> &Vec3 {
         &self.vel
     }
 }
