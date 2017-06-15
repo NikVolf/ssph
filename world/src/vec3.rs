@@ -1,9 +1,10 @@
 use std::ops::{Add, Sub};
 
+#[derive(Debug)]
 pub struct Vec3 {
-    x: f64,
-    y: f64,
-    z: f64,
+    pub x: f64,
+    pub y: f64,
+    pub z: f64,
 }
 
 impl Vec3 {
@@ -37,6 +38,12 @@ impl Sub for Vec3 {
             y: self.y - other.y,
             z: self.z - other.z,
         }
+    }
+}
+
+impl From<[f64; 3]> for Vec3 {
+    fn from(v: [f64; 3]) -> Self {
+        Vec3::new(v[0], v[1], v[2])
     }
 }
 
