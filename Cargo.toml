@@ -5,6 +5,7 @@ authors = ["NikVolf <nikvolf@gmail.com>"]
 
 [dependencies]
 world = { path = "world" }
+render = { path = "render" }
 kiss3d = "0.9"
 nalgebra = "0.12"
 
