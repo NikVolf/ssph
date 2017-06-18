@@ -6,5 +6,7 @@ authors = ["NikVolf <nikvolf@gmail.com>"]
 [dependencies]
 world = { path = "../world" }
 kiss3d = "0.9"
+gl = "0.6"
+nalgebra = "0.12"
 
 [lib]

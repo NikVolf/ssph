@@ -67,6 +67,14 @@ impl<T: Sized + Default + Clone> CubeMap<T> {
     }
 
     pub fn resolution(&self) -> usize { self.resolution }
+
+    pub fn side(&self, idx: u8) -> &Surf<T> {
+        &self.sides[idx as usize]
+    }
+
+    pub fn side_mut(&mut self, idx: u8) -> &mut Surf<T> {
+        &mut self.sides[idx as usize]
+    }
 }
 
 #[cfg(test)]
